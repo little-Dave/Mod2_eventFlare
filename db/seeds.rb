@@ -28,3 +28,13 @@ Category.delete_all
   Location.create(name: "The Ogden Theatre", city: denver, category: music )
   Location.create(name: "The Bluebird Theater", city: denver, category: music )
   Location.create(name: "Cervantes' Masterpiece Ballroom", city: denver, category: music )
+
+TimeInterval.delete_all
+  TimeInterval.create(interval: 15)
+  TimeInterval.create(interval: 30)
+  TimeInterval.create(interval: 45)
+  TimeInterval.create(interval: 60)
+  TimeInterval.create(interval: 75)
+  TimeInterval.create(interval: 90)
+  TimeInterval.create(interval: 105)
+  TimeInterval.create(interval: 120)
