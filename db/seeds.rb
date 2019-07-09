@@ -9,3 +9,11 @@ City.delete_all
   City.create(name: "Denver", state: "CO")
   City.create(name: "Seattle", state: "WA")
   City.create(name: "San Francisco", state: "CA")
+
+Category.delete_all
+  Category.create(name: "Movies" )
+  Category.create(name: "Museums" )
+  Category.create(name: "Food & Drink" )
+  Category.create(name: "Music")
+  Category.create(name: "Exercise")
+  Category.create(name: "Sports")
