@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_events
   resources :events
   resources :users
   resources :time_intervals
