@@ -1,4 +1,5 @@
 class TimeInterval < ApplicationRecord
+  has_many :events
   
   def to_event_time(time)
     time + 60*self.interval 

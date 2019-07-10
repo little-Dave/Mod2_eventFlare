@@ -21,6 +21,7 @@ Category.delete_all
   music = Category.create(name: "Music")
   exercise = Category.create(name: "Exercise")
   sports = Category.create(name: "Sports")
+  misc = Category.create(name: "Miscellaneous")
 
   washingtonpark = Location.create(name: "Washington Park", city: denver, category: exercise )
   Location.create(name: "City Park", city: denver, category: music )
