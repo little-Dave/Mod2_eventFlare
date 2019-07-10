@@ -12,17 +12,17 @@
   <body>
     <h1>Flarester</h1>
     <nav>
-      <ul>
+      <ul style="list-style-type: none">
         <% if @user && @user.id %>
         <%# what you want to show if logged in goes here %>
+          <li>USER PROFILE</li>
+          <li>EVENTS LISTING</li>
+          <li>CREATE EVENT</li>
           <li><%= link_to "Logout", login_path, method: :delete %></li>
         <% else %>
         <%# what you want to show if NOT logged in goes here %>
+          <li><%= link_to "Login", login_path %></li>
         <% end %>
-        <li>USER PROFILE</li>
-        <li>EVENTS LISTING</li>
-        <li>CREATE EVENT</li>
-        <li>SIGN OUT</li>
       </ul>
     </nav>
     <%= yield %>
