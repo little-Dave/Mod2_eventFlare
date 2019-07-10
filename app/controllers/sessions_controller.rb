@@ -7,12 +7,12 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(username: params[:user][:username])
-    if (@user.authenticate(params[:user][:password]))
+    if (@user && @user.authenticate(params[:user][:password]))
       session[:user_id] = @user.id
       redirect_to events_path
     else
       @user = User.new
-      @error = "Incorrect login :( , please try again :)"
+      @error = "Incorrect login, please try again"
       render "login/login"
     end
   end

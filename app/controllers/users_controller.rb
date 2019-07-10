@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(allowed_params)
-    redirect_to users_path
+    redirect_to login_path
   end
 
   private
