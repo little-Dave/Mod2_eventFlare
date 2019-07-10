@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.delete_all
 Location.delete_all
 City.delete_all
   denver = City.create(name: "Denver", state: "CO")
   seattle = City.create(name: "Seattle", state: "WA")
-  san_franciso = City.create(name: "San Francisco", state: "CA")
+  san_francisco = City.create(name: "San Francisco", state: "CA")
 
 Category.delete_all
   movies = Category.create(name: "Movies" )
@@ -38,3 +39,7 @@ TimeInterval.delete_all
   TimeInterval.create(interval: 90)
   TimeInterval.create(interval: 105)
   TimeInterval.create(interval: 120)
+
+  User.create(first_name: "Tri", last_name: "Win", username: "hello", phone_number: "5554443322", city: denver)
+  User.create(first_name: "Dave", last_name: "Rinohub", username: "drh", phone_number: "5556663322", city: seattle)
+  User.create(first_name: "Steve", last_name: "Thatguy", username: "idku", phone_number: "5557773322", city: san_francisco)
