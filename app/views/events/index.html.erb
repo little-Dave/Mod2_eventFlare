@@ -1,10 +1,13 @@
-<h1>Current Events</h1>
+<h1>Welcome, <%= @user.full_name %>!</h1>
+<% if @user.user_events.count > 0 %>
+  <% @user.user_events.each do |user_event| %>
+    <h1><%= user_event.event.name.upcase %>     <%=TimeInterval.format_time(user_event.event.event_time.to_time) %></h1>
+    <h2>@ <%= user_event.event.location.name %></h2> 
+  <% end %>
+<% end %>
+<h3>There are currently <%= @events.count %> events in <%= @user.city.name_state %>:</h3>
 <ul>
 <% @events.each do |event| %>
-<li>Event: <%= event.name %><br>
-Event type: <%= event.category.name %><br>
-When: <%= TimeInterval.format_time(event.event_time.to_time) %><br>
-Where: <%= event.location.name_city %><br>
-Notes: <%= event.notes %></li>
+<li><%=link_to "#{event.name.capitalize} @ #{event.location.name} #{TimeInterval.format_time(event.event_time.to_time)}", event_path(event) %> 
 <% end %>
 </ul>
