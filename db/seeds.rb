@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+UserEvent.delete_all
 Event.delete_all
 User.delete_all
 Location.delete_all
@@ -41,9 +42,12 @@ TimeInterval.delete_all
   TimeInterval.create(interval: 105)
   TimeInterval.create(interval: 120)
 
-  User.create(first_name: "Tri", last_name: "Win", username: "hello", phone_number: "5554443322", city: denver)
-  User.create(first_name: "Dave", last_name: "Rinohub", username: "drh", phone_number: "5556663322", city: seattle)
+  tri = User.create(first_name: "Tri", last_name: "Win", username: "hello", phone_number: "5554443322", city: denver)
+  dave = User.create(first_name: "Dave", last_name: "Rinohub", username: "drh", phone_number: "5556663322", city: seattle)
   User.create(first_name: "Steve", last_name: "Thatguy", username: "idku", phone_number: "5557773322", city: san_francisco)
 
-  Event.create(name: "Flying kites", category: sports, event_time: ninety.to_event_time(Time.now) , location: washingtonpark, notes: "Come do whatever the F* you want, in lovely, beautiful D E N V E R! Can't wait to meet you", city: denver, time_interval: ninety)
-  Event.create(name: "Spiderman", category: movies, event_time: fifteen.to_event_time(Time.now), location: washingtonpark, notes: "outdoor movie starts in 15 minutes--give me a shout!", city: denver, time_interval: fifteen)
+  kites = Event.create(name: "Flying kites", category: sports, event_time: ninety.to_event_time(Time.now) , location: washingtonpark, notes: "Come do whatever the F* you want, in lovely, beautiful D E N V E R! Can't wait to meet you", city: denver, time_interval: ninety)
+  spiderman = Event.create(name: "Spiderman", category: movies, event_time: fifteen.to_event_time(Time.now), location: washingtonpark, notes: "outdoor movie starts in 15 minutes--give me a shout!", city: denver, time_interval: fifteen)
+
+  UserEvent.create(user: tri, event: spiderman)
+  UserEvent.create(user: dave, event: kites)
