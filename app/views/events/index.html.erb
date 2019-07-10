@@ -1,0 +1,10 @@
+<h1>Current Events</h1>
+<ul>
+<% @events.each do |event| %>
+<li>Event: <%= event.name %><br>
+Event type: <%= event.category.name %><br>
+When: <%= TimeInterval.format_time(event.event_time.to_time) %><br>
+Where: <%= event.location.name_city %><br>
+Notes: <%= event.notes %></li>
+<% end %>
+</ul>

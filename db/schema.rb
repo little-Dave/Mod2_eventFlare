@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_10_000450) do
+ActiveRecord::Schema.define(version: 2019_07_10_005716) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,22 @@ ActiveRecord::Schema.define(version: 2019_07_10_000450) do
     t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.text "notes"
+    t.string "event_time"
+    t.bigint "city_id"
+    t.bigint "location_id"
+    t.bigint "category_id"
+    t.bigint "time_interval_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_events_on_category_id"
+    t.index ["city_id"], name: "index_events_on_city_id"
+    t.index ["location_id"], name: "index_events_on_location_id"
+    t.index ["time_interval_id"], name: "index_events_on_time_interval_id"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -55,6 +71,10 @@ ActiveRecord::Schema.define(version: 2019_07_10_000450) do
     t.index ["city_id"], name: "index_users_on_city_id"
   end
 
+  add_foreign_key "events", "categories"
+  add_foreign_key "events", "cities"
+  add_foreign_key "events", "locations"
+  add_foreign_key "events", "time_intervals"
   add_foreign_key "locations", "categories"
   add_foreign_key "locations", "cities"
   add_foreign_key "users", "cities"
