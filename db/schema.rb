@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 2019_07_10_020436) do
     t.string "last_name"
     t.string "username"
     t.string "phone_number"
+    t.string "password_digest"
     t.bigint "city_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
