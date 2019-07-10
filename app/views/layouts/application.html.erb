@@ -16,7 +16,6 @@
         <% if @user && @user.id %>
         <%# what you want to show if logged in goes here %>
           <li>USER PROFILE</li>
-          <li>EVENTS LISTING</li>
           <li>CREATE EVENT</li>
           <li><%= link_to "Logout", login_path, method: :delete %></li>
         <% else %>

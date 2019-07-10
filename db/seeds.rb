@@ -45,10 +45,11 @@ TimeInterval.delete_all
 
   tri = User.create(first_name: "Tri", last_name: "Win", username: "hello", phone_number: "5554443322", city: denver, password_digest: "xyzzyshift")
   dave = User.create(first_name: "Dave", last_name: "Rinohub", username: "drh", phone_number: "5556663322", city: seattle, password_digest: "lols")
-  User.create(first_name: "Steve", last_name: "Thatguy", username: "idku", phone_number: "5557773322", city: san_francisco, password_digest: "jajaja")
+  steve = User.create(first_name: "Steve", last_name: "Thatguy", username: "idku", phone_number: "5557773322", city: san_francisco, password_digest: "jajaja")
 
   kites = Event.create(name: "Flying kites", category: sports, event_time: ninety.to_event_time(Time.now) , location: washingtonpark, notes: "Come do whatever the F* you want, in lovely, beautiful D E N V E R! Can't wait to meet you", city: denver, time_interval: ninety)
   spiderman = Event.create(name: "Spiderman", category: movies, event_time: fifteen.to_event_time(Time.now), location: washingtonpark, notes: "outdoor movie starts in 15 minutes--give me a shout!", city: denver, time_interval: fifteen)
 
   UserEvent.create(user: tri, event: spiderman)
   UserEvent.create(user: dave, event: kites)
+  UserEvent.create(user: steve, event: kites)
