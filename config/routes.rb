@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :time_intervals
   resources :locations
   resources :categories
