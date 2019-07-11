@@ -2,7 +2,7 @@
 <% if @user.user_events.count > 0 %>
 <h3>You're attending <%= @user.user_events.count %> event(s):</h3> 
   <% @user.user_events.each do |user_event| %>
-    <h3><%= user_event.event.name.upcase %>     <%=TimeInterval.format_time(user_event.event.event_time.to_time) %></h3>
+    <h3><%= link_to "#{user_event.event.name.upcase}     #{TimeInterval.format_time(user_event.event.event_time.to_time)}", user_event_path(user_event) %></h3>
     <h4>@ <%= user_event.event.location.name %></h4> 
   <% end %>
 <% end %>
