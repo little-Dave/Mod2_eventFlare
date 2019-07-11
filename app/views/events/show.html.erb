@@ -5,4 +5,10 @@
 <h2>Notes: </h2>
 <p><%= @event.notes %></p>
 
+<%= form_for @user_event do |f| %>
+  <%= f.hidden_field :user_id, value: @user.id %>
+  <%= f.hidden_field :event_id, value: @event.id %>
+  <%= f.submit "Join event" %>
+<% end %>
+
 <%= link_to "Back to #{@user.city.name_state} events", events_path %>
