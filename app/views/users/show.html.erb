@@ -2,4 +2,6 @@
 <h3>First name: <%= @user.first_name %></h3>
 <h3>Last name: <%= @user.last_name %></h3>
 <h3>Location: <%= @user.city.name_state %></h3>
-<h3>Phone: <%= @user.formatted_phone_number %></h3>
+<h3>Phone: <%= @user.formatted_phone_number %></h3><br>
+
+<%= link_to "Back to #{@user.city.name_state} events", events_path %>

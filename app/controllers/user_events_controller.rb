@@ -7,7 +7,7 @@ class UserEventsController < ApplicationController
   def show
     @user_event = UserEvent.find(params[:id])
     @event = @user_event.event
-    @creator = @event.users.first
+    @coordinator = @event.users.first
   end
 
   def create
@@ -16,7 +16,7 @@ class UserEventsController < ApplicationController
   end
 
   def destroy
-    UserEvent.find(params[:id]).destroy
+   UserEvent.find(params[:id]).destroy
     redirect_to events_path
   end
 

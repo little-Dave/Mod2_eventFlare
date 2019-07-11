@@ -1,13 +1,15 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all
+    @events = Event.all.select do |x|
+      x.event_time.to_time > Time.now && x.city == @user.city
+    end
     @unattended_events = @events.count - @user.user_events.count
   end
 
   def show
     @event = Event.find(params[:id])
     @user_event = UserEvent.new
-    @creator = @event.users.first
+    @coordinator = @event.users.first
   end
 
   def new
