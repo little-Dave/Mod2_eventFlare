@@ -1,8 +1,8 @@
 <h3>Category: <%= @event.category.name %></h3>
 <h1><%= @event.name.upcase %>     <%=TimeInterval.format_time(@event.event_time.to_time) %></h1>
 <h2>@ <%= @event.location.name %></h2>
-<p>Created by: <%= @creator.first_name %> </p><br>
-<p>Reach <%= @creator.first_name %> at: <%= @creator.phone_number%>
+<p>Coordinator: <%= @coordinator.first_name %> </p><br>
+<p>Reach <%= @coordinator.first_name %> at: <%= @coordinator.phone_number%>
 <h2>Notes: </h2>
 <p><%= @event.notes %></p><br>
 
