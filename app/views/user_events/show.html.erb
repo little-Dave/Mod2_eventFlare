@@ -4,6 +4,8 @@
 <p>Created by: <%= @creator.first_name %> </p><br>
 <p>Reach <%= @creator.first_name %> at: <%= @creator.phone_number%>
 <h2>Notes: </h2>
-<p><%= @event.notes %></p>
+<p><%= @event.notes %></p><br>
+
+<%= button_to "Back out", @user_event, method: :delete %>
 
 <%= link_to "Back to #{@user.city.name_state} events", events_path %>

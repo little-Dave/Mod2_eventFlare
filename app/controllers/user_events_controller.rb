@@ -15,6 +15,11 @@ class UserEventsController < ApplicationController
     redirect_to events_path
   end
 
+  def destroy
+    UserEvent.find(params[:id]).destroy
+    redirect_to events_path
+  end
+
   private
 
   def allowed_params
