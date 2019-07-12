@@ -18,6 +18,9 @@ Flarester is an app that allows you to join events created by other users--simil
 Check it out on Heroku:
 https://powerful-eyrie-94140.herokuapp.com/
 
+If you have an extra 3 minutes, watch our demo here:
+https://www.youtube.com/watch?v=qXVh9aJf92c&feature=youtu.be
+
 
 
 
