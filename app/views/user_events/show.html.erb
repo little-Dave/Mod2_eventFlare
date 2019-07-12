@@ -6,6 +6,6 @@
 <h2>Notes: </h2>
 <p><%= @event.notes %></p><br>
 
-<%= button_to "Back out", @user_event, method: :delete %>
+<%= button_to "Back out", @user_event, method: :delete, class: "btn btn-warning" %>
 
 <%= link_to "Back to #{@user.city.name_state} events", events_path %>
