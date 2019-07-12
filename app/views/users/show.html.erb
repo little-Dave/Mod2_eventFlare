@@ -6,6 +6,8 @@
 
 <%= link_to "Back to #{@user.city.name_state} events", events_path %>
 
+<% if @user.last_event %>
+
 <h2>Your stats</h2><br>
 
 <h3>"<%= @user.last_event.name %>" was the last event you participated in</h3>
@@ -26,3 +28,4 @@
 </ul>
 <h3>That's an average of <%= @user.average_number_of_participants %> people per event </h3>
 <h3>You typically participate in events that occur within <%= @user.average_time_interval %> minutes of having been created</h3>
+<% end %>

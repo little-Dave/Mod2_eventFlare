@@ -1,11 +1,15 @@
 <h3>Category: <%= @event.category.name %></h3>
 <h1><%= @event.name.upcase %>     <%=TimeInterval.format_time(@event.event_time.to_time) %></h1>
 <h2>@ <%= @event.location.name %></h2>
-<p>Coordinator: <%= @coordinator.first_name %> </p><br>
-<p>Reach <%= @coordinator.first_name %> at: <%= @coordinator.phone_number%>
+<h5>Coordinator: <%= @coordinator.first_name %> </h5>
+<p>Reach <%= @coordinator.first_name %> at: <%= @coordinator.formatted_phone_number%>
+<br>
+<br>
 <h2>Notes: </h2>
 <p><%= @event.notes %></p><br>
 
-<%= button_to "Back out", @user_event, method: :delete, class: "btn btn-warning" %>
-
 <%= link_to "Back to #{@user.city.name_state} events", events_path %>
+<br>
+<br>
+<%= button_to "Ghost", @user_event, method: :delete, class: "btn btn-danger" %>
+
