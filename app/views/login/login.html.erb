@@ -6,10 +6,11 @@
   <p><%= @error %></p>
 <% end %>
 
-<%# <div class="card bg-dark text-white">
+<div class="card bg-dark text-white" style="height: 50px;">
   <img src="/assets/flare.jpg" class="card-img">
   <div class="card-img-overlay">
-    <br> %>
+    <br>
+    <br>
     <%= form_for @user, url: {controller: "sessions", action: "create"} do |f| %>
     <div class="row">
       <div class="field form-group col-md-4">
@@ -30,5 +31,5 @@
     <br>
     <p>First time here? <%= link_to "Create an account", new_user_path %>
 
-  <%# </div>
-</div> %>
+  </div>
+</div>
