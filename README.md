@@ -15,6 +15,8 @@ To run the app, type `rails s` into your command line and hit return. You should
 
 Flarester is an app that allows you to join events created by other users--similar to Meetups in this way, Flarester differentiates itself in that it's aimed at providing users the opportunity to post or join only near-future events (occurring within two hours of posting).
 
+Check it out on Heroku:
+https://powerful-eyrie-94140.herokuapp.com/
 
 
 
