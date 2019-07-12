@@ -19,4 +19,8 @@
     <li><%=link_to "#{event.name.capitalize} @ #{event.location.name} #{TimeInterval.format_time(event.event_time.to_time)}", event_path(event) %> 
   <% end %>
 <% end %>
+<br>
+<br>
+<li style="list-style-type: none"><%= link_to "Create Event", new_event_path %></li>
 </ul>
+
