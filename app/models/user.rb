@@ -4,6 +4,9 @@ class User < ApplicationRecord
   has_many :events, through: :user_events
   has_secure_password
   
+  validates :username, presence: true, uniqueness: true
+  validates :password, length: { in: 4..20 }
+
   def full_name
     "#{self.first_name} #{self.last_name}"
   end
