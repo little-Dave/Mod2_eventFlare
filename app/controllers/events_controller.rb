@@ -1,9 +1,13 @@
 class EventsController < ApplicationController
+  
   def index
     @events = Event.all.select do |x|
       x.event_time.to_time > Time.now && x.city == @user.city
     end
-    @unattended_events = @events.count - @user.user_events.count
+    @scheduled_user_events = Event.all.select do |x|
+      (x.event_time.to_time > Time.now && x.city == @user.city) && (x.users.include?(@user))
+    end
+    @unattended_events = @events.count - @scheduled_user_events.count
   end
 
   def show

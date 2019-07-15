@@ -1,4 +1,4 @@
-<h3>Category: <%= @event.category.name %></h3>
+<h5>Category: <%= @event.category.name %></h5>
 <h1><%= @event.name.upcase %>     <%=TimeInterval.format_time(@event.event_time.to_time) %></h1>
 <h2>@ <%= @event.location.name %></h2>
 <h5>Coordinator: <%= @coordinator.first_name %> </h5>

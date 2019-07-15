@@ -32,6 +32,7 @@ Category.delete_all
   Location.create(name: "The Ogden Theatre", city: denver, category: music )
   Location.create(name: "The Bluebird Theater", city: denver, category: music )
   Location.create(name: "Cervantes' Masterpiece Ballroom", city: denver, category: music )
+  Location.create(name: "See notes for location", city: denver, category: misc )
 
   Location.create(name: "Golden Gate Park", city: san_francisco, category: exercise )
   Location.create(name: "Glen Canyon Park", city: san_francisco, category: music )
@@ -42,6 +43,7 @@ Category.delete_all
   Location.create(name: "Bottom of the Hill", city: san_francisco, category: music )
   Location.create(name: "The Fillmore", city: san_francisco, category: music )
   Location.create(name: "Slim's", city: san_francisco, category: music )
+  Location.create(name: "See notes for location", city: san_francisco, category: misc )
 
   Location.create(name: "Discovery Park", city: seattle, category: exercise )
   Location.create(name: "Olympic Sculpture Park", city: seattle, category: music )
@@ -52,6 +54,7 @@ Category.delete_all
   Location.create(name: "Tractor Tavern", city: seattle, category: music )
   Location.create(name: "Columbia City Theatre", city: seattle, category: music )
   Location.create(name: "Neumos", city: seattle, category: music )
+  Location.create(name: "See notes for location", city: seattle, category: misc )
 
 TimeInterval.delete_all
   TimeInterval.create(interval: 15)
