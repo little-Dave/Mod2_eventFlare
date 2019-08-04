@@ -69,7 +69,7 @@ Once installed, simply type `rspec` into the command line and hit return--this s
 
 -----------------------------------------------------------------------------------------------------------------------
 
-**Our app is on Heroku! Save time and check it out at the link below!**
+**Our app is on Heroku! Save time and check it out at the link below:**
 
 Check it out on Heroku:
 https://powerful-eyrie-94140.herokuapp.com/
@@ -77,7 +77,10 @@ https://powerful-eyrie-94140.herokuapp.com/
 If you have an extra 3 minutes, watch our demo on YouTube:
 https://www.youtube.com/watch?v=qXVh9aJf92c&feature=youtu.be
 
-Thanks for stopping by :computer:
+- Login page image courtesy of https://unsplash.com/ !
+- Credit also goes to  https://fonts.google.com/ (*Flarester* uses )
+
+Thanks for stopping by :thumbsup: :thumbsup:
 
          "Every great developer you know got there by solving problems they were unqualified to solve 
           until they actually did it." 
