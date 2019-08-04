@@ -71,7 +71,6 @@ Once installed, simply type `rspec` into the command line and hit return--this s
 
 **Our app is on Heroku! Save time and check it out at the link below:**
 
-Check it out on Heroku:
 https://powerful-eyrie-94140.herokuapp.com/
 
 If you have an extra 3 minutes, watch our demo on YouTube:
