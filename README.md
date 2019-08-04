@@ -8,11 +8,25 @@ Future functionality will allow users to update events they've created and remov
 
 
 
-                                                  Create an account
+                                                 Create an account
                                                   
 ![](eventFlare_create.gif)
 
 -----------------------------------------------------------------------------------------------------------------------------------
+
+                                      Login and view current events in your area
+                                                       
+![](eventFlare_loginAndView.gif)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                                   Join an event
+                                                   
+![](eventFlare_joinEvent.gif)  
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
 We used Ruby version 2.6.1
 
 Make sure to run `bundle install`, `rails db:create`, `rails db:migrate` and `rails db:seed` before running the app. 
