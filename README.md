@@ -1,5 +1,18 @@
-READ ME
+# READ ME
 
+*Flarester* allows users to create and/or join events in their area--similar to 'Meetup' in this way, *Flarester* differentiates itself by aiming to provide these services only for near-future events--events occuring within two hours of being listed. Once created, listings populate to the local event list and are automatically removed once their scheduled time has passed.  
+
+*Flarester* creates opportunities for casual networking, promotes new friendships and amplifies the user's ability to expand their world.
+
+Future functionality will allow users to update events they've created and remove them from view prior to their expiration. 
+
+
+
+                                                  Create an account
+                                                  
+![](eventFlare_create.gif)
+
+-----------------------------------------------------------------------------------------------------------------------------------
 We used Ruby version 2.6.1
 
 Make sure to run `bundle install`, `rails db:create`, `rails db:migrate` and `rails db:seed` before running the app. 
@@ -13,7 +26,7 @@ To run the app, type `rails s` into your command line and hit return. You should
 
 -----------------------------------------------------------------------------------------------------------------------
 
-Flarester is an app that allows you to join events created by other users--similar to Meetups in this way, Flarester differentiates itself in that it's aimed at providing users the opportunity to post or join only near-future events (occurring within two hours of posting).
+
 
 Check it out on Heroku:
 https://powerful-eyrie-94140.herokuapp.com/
