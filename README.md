@@ -78,7 +78,7 @@ If you have an extra 3 minutes, watch our demo on YouTube:
 https://www.youtube.com/watch?v=qXVh9aJf92c&feature=youtu.be
 
 - Login page image courtesy of https://unsplash.com/ !
-- Credit also goes to  https://fonts.google.com/ (*Flarester* uses )
+- Credit also goes to  https://fonts.google.com/ (*Flarester* uses Racing Sans One for its logo)
 
 Thanks for stopping by :thumbsup: :thumbsup:
 
