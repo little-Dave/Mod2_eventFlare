@@ -63,7 +63,7 @@ Future functionality will allow users to update events they've created and remov
 To run the app, just type `rails s` into your command line (from the app's directory, of course) and hit return. You should be up and running!
 
 
--The app does have a test suite--if you plan on running it, you'll need to install Rspec with `rails g rspec:install` 
+- The app does have a test suite--if you plan on running it, you'll need to install Rspec with `rails g rspec:install` 
 Once installed, simply type `rspec` into the command line and hit return--this should run the suite.
 
 
