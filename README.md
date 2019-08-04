@@ -73,8 +73,8 @@ Once installed, simply type `rspec` into the command line and hit return--this s
 
 https://powerful-eyrie-94140.herokuapp.com/
 
-If you have an extra 3 minutes, watch our demo on YouTube:
-https://www.youtube.com/watch?v=qXVh9aJf92c&feature=youtu.be
+And now that you have an extra minute or two, watch our demo on YouTube:
+https://www.youtube.com/watch?v=qXVh9aJf92c&feature=youtu.be  
 
 - Login page image courtesy of https://unsplash.com/ !
 - Credit also goes to  https://fonts.google.com/ (*Flarester* uses Racing Sans One for its logo)
