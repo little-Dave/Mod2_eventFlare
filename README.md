@@ -34,26 +34,54 @@ Future functionality will allow users to update events they've created and remov
 
 ![](eventFlare_seeYourEvent.gif)
 
-We used Ruby version 2.6.1
+-----------------------------------------------------------------------------------------------------------------------------------
 
-Make sure to run `bundle install`, `rails db:create`, `rails db:migrate` and `rails db:seed` before running the app. 
-You can add additional city and location objects in app/db/seed.rb for use within the app--if you do, make sure to run 
-`rails db:seed` again. 
+                                                Back out of an event
+                                                
+![](eventFlare_backOut.gif)
 
-If you plan on running the test suite, you'll need to install Rspec with `rails g rspec:install` 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                                             View and edit your profile
+                                             
+![](eventFlare_viewEditProfile.gif)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+**We used Ruby version 2.6.1**
+
+**Once you've cloned the repo, make sure to run the following commands from the app's directory:**
+- `bundle install`
+- `rails db:create`
+- `rails db:migrate`
+- `rails db:seed`
+   - You can add additional city and location objects in app/db/seed.rb--if you do, make sure to run 
+    `rails db:seed` again. 
+    
+**Run the app**
+To run the app, just type `rails s` into your command line (from the app's directory, of course) and hit return. You should be up and running!
+
+
+-The app does have a test suite--if you plan on running it, you'll need to install Rspec with `rails g rspec:install` 
 Once installed, simply type `rspec` into the command line and hit return--this should run the suite.
 
-To run the app, type `rails s` into your command line and hit return. You should be up and running!
 
 -----------------------------------------------------------------------------------------------------------------------
 
-
+**Our app is on Heroku! Save time and check it out at the link below!**
 
 Check it out on Heroku:
 https://powerful-eyrie-94140.herokuapp.com/
 
-If you have an extra 3 minutes, watch our demo here:
+If you have an extra 3 minutes, watch our demo on YouTube:
 https://www.youtube.com/watch?v=qXVh9aJf92c&feature=youtu.be
+
+Thanks for stopping by :computer:
+
+    "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it." 
+                                                                                                    - Patrick McKenzie
+
 
 
 
