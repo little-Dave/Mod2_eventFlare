@@ -60,7 +60,7 @@ Future functionality will allow users to update events they've created and remov
     `rails db:seed` again. 
     
 **Run the app**
-To run the app, just type `rails s` into your command line (from the app's directory, of course) and hit return. You should be up and running!
+-Just type `rails s` into your command line (from the app's directory, of course) and hit return. You should be up and running!
 
 
 - The app does have a test suite--if you plan on running it, you'll need to install Rspec with `rails g rspec:install` 
