@@ -14,7 +14,7 @@ Future functionality will allow users to update events they've created and remov
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-                                      Login and view current events in your area
+                                      Log in to view current events in your area
                                                        
 ![](eventFlare_loginAndView.gif)
 
@@ -26,6 +26,13 @@ Future functionality will allow users to update events they've created and remov
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
+                                              Create and list an event
+                                              
+![](eventFlare_createYourOwnEvent.gif)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+![](eventFlare_seeYourEvent.gif)
 
 We used Ruby version 2.6.1
 
