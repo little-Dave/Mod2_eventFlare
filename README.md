@@ -79,9 +79,9 @@ https://www.youtube.com/watch?v=qXVh9aJf92c&feature=youtu.be
 
 Thanks for stopping by :computer:
 
-                 "Every great developer you know got there by solving problems they were unqualified to solve 
-                  until they actually did it." 
-                                                                                      - Patrick McKenzie
+             "Every great developer you know got there by solving problems they were unqualified to solve 
+              until they actually did it." 
+                                                                                  - Patrick McKenzie
 
 
 
